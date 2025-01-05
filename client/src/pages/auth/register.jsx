@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
   const initialState = {
-    username: "",
+    userName: "",
     password: "",
     email: "",
   };
@@ -14,7 +14,11 @@ export default function Register() {
 
   }
 
+
+  
+
   const [formData, setFormData] = useState(initialState);
+  console.log(formData);
   return (
     <div className="flex flex-col justify-center h-full mx-auto w-full max-w-md space-y-6">
       <div className="text-center">
